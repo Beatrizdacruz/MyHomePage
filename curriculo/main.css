@@ -1,0 +1,287 @@
+/* Fonte */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #332929;
+}
+
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+/* Variáveis */
+:root {
+  --color-purple: rgb(177, 23, 190);
+  --color-blue: rgb(37, 40, 238);
+}
+
+/* Estilos Globais */
+
+section:nth-child(2n + 1) {
+  background: #fce8e8;
+  height: 100vh;
+}
+
+/* Estilos para a seção Header */
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+}
+
+.nome {
+  transform: translateY(-20px);
+  font-size: 50px;
+}
+
+.image-div {
+  position: relative;
+}
+
+.image {
+  position: relative;
+  border-radius: 100%;
+  z-index: 10;
+}
+
+.intro {
+  width: 500px;
+  position: relative;
+}
+
+.barra-perfil {
+  position: absolute;
+  width: 400px;
+  height: 3px;
+  background: var(--color-purple);
+  top: 30px;
+}
+
+.icones{
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+.icone{
+    width: 20px;
+    cursor:pointer;
+}
+/* Estilos para a seção "Sobre mim" */
+
+#aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+}
+
+.informacoes {
+  width: 450px;
+}
+
+.objetivos{
+    margin-bottom: 20px;
+}
+
+.competencias{
+    margin-bottom: 100px;
+}
+
+.baras {
+  position: relative;
+}
+.progresso {
+  width: 500px;
+  height: 5px;
+  background: gray;
+}
+
+.progresso-75 {
+  position: absolute;
+  top: 0;
+  width: 400px;
+  height: 5px;
+  background: var(--color-purple);
+}
+
+.progresso-100 {
+  position: absolute;
+  top: 0;
+  width: 500px;
+  height: 5px;
+  background: var(--color-purple);
+}
+
+.progresso-50 {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 5px;
+  background: var(--color-purple);
+}
+
+.progresso-25 {
+  position: absolute;
+  top: 0;
+  width: 125px;
+  height: 5px;
+  background: var(--color-purple);
+}
+
+#escolaridade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2-escolaridade{
+  font-size: 30px;
+  transform: translateY(-20px);
+}
+
+.h2-interesse{
+  font-size: 30px;
+}
+
+.escolaridade-interrese{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#profissional {
+  padding: 0 20rem;
+  display: flex;
+  justify-content: center;
+}
+
+.experiencias{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  height: 100vh; 
+}
+
+.experiencia-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 40px; 
+}
+
+.experiencia{
+  flex: 1; 
+}
+
+.h2-experiencias{
+  transform: translateY(-70px);
+  font-size: 30px;
+}
+
+.atividades-projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  height: 100vh; 
+}
+
+.h2-atividades-projetos{
+  font-size: 30px;
+  transform: translateY(-70px);
+}
+
+
+.projetos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; 
+}
+
+.projeto {
+  flex: 1; 
+}
+
+.atividadesExtras{
+  margin-top: 15px;
+  display: flex;
+  gap: 220px;
+  
+}
+.iconea{
+  width: 300px;
+  cursor:pointer;
+  position: relative;
+  border-radius: 100%;
+  z-index: 10;
+}
+
+#projetos {
+  display: flex;
+  justify-content: center;
+  padding: 0 20rem ;
+}
+
+#contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/* Estilizar o contêiner do formulário */
+.forms {
+  text-align: center; 
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+input[type="text"],
+textarea {
+  width: 100%; 
+  border: 1px solid rgb(181, 158, 184);
+  padding: 10px;
+  margin-bottom: 10px; 
+}
+input[type="text"]:focus,
+textarea:focus {
+    border: 3px solid rgb(177, 23, 190);
+}
+
+/* Estilo para os botões "Enviar" e "Cancelar" */
+input[type="submit"],
+input[type="reset"] {
+    background-color: rgb(177, 23, 190); 
+    color: #fff; 
+    padding: 15px 20px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+input[type="submit"]:focus {
+    box-shadow: 0 0 5px rgb(177, 23, 190);
+}
+input[type="reset"]:focus {
+    box-shadow: 0 0 5px rgb(177, 23, 190);
+}
